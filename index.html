@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-
-
   </head>
   <body>
     <!-- header con nav e immagine -->
@@ -16,28 +13,27 @@
       <!-- navigatore -->
       <section class="header-top">
         <!-- login e lingua -->
-        <div id="nav-top">
+        <div id="nav-top" >
+
+          <!-- nav sinistra -->
           <div class="nav-left">
             <ul>
               <li><i id="glob"class="fas fa-globe-europe"></i></li>
-              <li>
-                English <i class="fas fa-angle-down"></i>
-              </li>
+              <li>  English <i class="fas fa-angle-down"></i></li>
               <span>|</span>
               <li>Contact us</li>
             </ul>
           </div>
+          <!-- /nav sinistra -->
+          <!-- nav destra -->
           <div class="nav-right">
             <ul>
               <li><i class="fas fa-search"></i></li>
-              <li>
-                <button id="login">Login</button>
-              </li>
-              <li>
-                <button id="button-orange">GetHubSpotFree</button>
-              </li>
+              <li><button id="login">Login</button></li>
+              <li><button id="button-orange">GetHubSpotFree</button></li>
             </ul>
           </div>
+          <!-- /nav destra -->
         </div>
         <!-- /login e lingua -->
         <!-- menu e logo -->
@@ -53,7 +49,6 @@
                 <li>Resources <i class="fas fa-angle-down"></i></li>
                 <li>Partners <i class="fas fa-angle-down"></i></li>
                 <li>About <i class="fas fa-angle-down"></i></li>
-
               </ul>
             </nav>
           </div>
@@ -65,7 +60,7 @@
       <section id="header-bottom">
         <div class="presentation">
           <h1>There's a better way to grow</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
           <button id="button-orange">GetHubSpotFree</button>
           <h6>Get start whit free tools</h6>
 
@@ -76,47 +71,127 @@
     <!--/ header con nav e immagine -->
 
     <main class="container" >
+      <!-- contenuto centrale del sito con prodotti -->
+
+      <!-- presentazione servizi -->
       <section id="main-top">
-
         <div class="title-product">
-          titolo prodotto e immagine
-
+          <img id="integrations-img"src="img/integrations.png" alt="">
+          <h2>Powerful alone. Better together.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
         </div>
-
+        <!-- /presentazione servizi -->
+       <!-- dettaglio prodotti -->
+       <!-- colonna orizzontale prodotti -->
         <div class="row-product">
-          PRODOTTO
-
+          <div class="crm-left">
+            <img id="product-logo"src="img/crm.svg" alt="immagine crm">
+            <button id="button-orange">Learn More</button>
+          </div>
+          <div class="crm-right">
+            <h2>FREE Hubspot CRM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <h3>POPOLAR FEATURE</h3>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact insight
+            <i id="checkmark"class="fas fa-check-circle"></i> Deals
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact
+          </div>
         </div>
+        <!-- /colonna orizzontale prodotti -->
 
+        <!-- tre colonne verticali prodotti -->
         <div class="columns-product">
           <div class="product">
-            PROOTTO
-
+            <img id="product-logo2"src="img/marketing.svg" alt="immagine marketing">
+            <h2>Marketing Hub.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+            <hr>
+            <p>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact insight <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Deals <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact
+            </p>
+            <button id="button-orange">Learn More</button>
+          </div>
+          <div class="product center">
+            <img id="product-logo"src="img/sales.svg" alt="immagine marketing">
+            <h2>Sales Hub.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+            <hr>
+            <p>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact insight <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Deals <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact
+            </p>
+            <button id="button-orange">Learn More</button>
 
           </div>
           <div class="product">
-            PRODOTTO
-
+            <img id="product-logo2"src="img/service-hub.svg" alt="immagine marketing">
+            <h2>Service Hub.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+            <hr>
+            <p>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact insight <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Deals <br>
+            <i id="checkmark"class="fas fa-check-circle"></i> Contact
+            </p>
+            <button id="button-orange">Learn More</button>
           </div>
-          <div class="product">
-            PRODOTTO
-
-          </div>
+          <!-- /tre colonne verticali prodotti -->
         </div>
-
-
+        <!-- /dettaglio prodotti -->
       </section>
 
+      <!-- statistiche e risultati ottenuti -->
       <section id="main-center">
         <div class="title-statistic">
-          titolo statistiche
-
+          <h2>Learning and grow with award-winning support and a thiriving community <br> behind you</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="statistic">
-          statistiche
-
+          <div class="data-statistic border top">
+            <img src="img/community.svg" alt="">
+            <h2>150+</h2>
+            <p>HubSpot user groups</p>
+          </div>
+          <div class="data-statistic border top">
+            <img src="img/blog.svg" alt="">
+            <h2>7M+</h2>
+            <p>Monthly visit</p>
+          </div>
+          <div class="data-statistic border top">
+            <img src="img/academy.svg" alt="">
+            <h2>276K+</h2>
+            <p>Certified professionals</p>
+          </div>
+          <div class="data-statistic border right">
+            <img src="img/inbound.svg" alt="">
+            <h2>26K</h2>
+            <p>Registered attendees</p>
+          </div>
+          <div class="data-statistic border bottom">
+            <img src="img/academy.svg" alt="">
+            <h2>500+</h2>
+            <p>Integrations</p>
+          </div>
+          <div class="data-statistic border bottom">
+            <img src="img/globe.svg" alt="">
+            <h2>6</h2>
+            <p>Languages</p>
+          </div>
+          <div class="data-statistic border bottom">
+            <img src="img/social.svg" alt="">
+            <h2>2.6M+</h2>
+            <p>Social followers</p>
+          </div>
+          <div class="data-statistic">
+            <img id="customer-img" src="img/customers.svg" alt="">
+            <h2>86,000</h2>
+            <p>Customer</p>
         </div>
       </section>
+      <!-- /statistiche e risultati ottenuti -->
 
       <section id="main-bottom">
         <div class="reference-top">
@@ -139,7 +214,7 @@
           </div>
         </div>
       </section>
-
+      <!-- /contenuto centrale del sito con prodotti -->
     </main>
     <footer class="container" >
       <div class="top-footer">
