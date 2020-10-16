@@ -1,7 +1,7 @@
 * {
   box-sizing:border-box;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Volkhov', serif;
 }
 
 
@@ -11,13 +11,10 @@
   margin-top: 97px;
 }
 
-header.container {
-  height: 574px;
-}
-
 main.container {
   margin: 0;
 }
+
 
 #main-top {
   height: 1400px;
@@ -36,7 +33,7 @@ main.container {
 #main-center {
   height: 700px;
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,176,176,1) 0%, rgba(0,212,255,1) 94%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,176,176,1) 0%, rgba(0,212,255,1) 94%);
 }
 
 #main-bottom , footer {
@@ -90,11 +87,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,176,176,1) 0%, rgb
 
 
 #login {
-  background-color: #ecf0ee;
+  background-color: white;
   color: #fb7956;
   border: 1px solid #fb7956;
   border-radius: 5px;
   font-size: 20px;
+  text-decoration: none;
+  padding: 3px;
 }
 #login:hover{
   background-color: #fb7956;
@@ -107,10 +106,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,176,176,1) 0%, rgb
   border-radius: 5px;
   border-color: none;
   font-size: 20px;
+  text-decoration: none;
+  padding:3px;
 }
 #button-orange:hover {
-  background-color: #ecf0ee;
+  background-color: white;
   color: #fb7956;
+
 }
 
 li:hover {
@@ -213,15 +215,14 @@ li:hover {
   padding: 50px;
   text-align: center;
   float: left;
+  vertical-align: middle;
 
 }
 #product-logo {
   width: 140px;
+  height: 100px;
 }
 
-#product-logo2 {
-  width: 100px;
-}
 /* /colonna orizzontale prodotti */
 
 /* tre colonne verticali prodotti */
@@ -233,7 +234,7 @@ li:hover {
 
 .product {
   width: 30%;
-  height:71%;
+  height:73%;
   border: 2px solid gray;
   float: left;
   background-color: white;
