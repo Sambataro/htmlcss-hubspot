@@ -1,16 +1,16 @@
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   margin: 0;
-  font-family: 'Volkhov', sans-serif;
+  font-family: 'Volkhov', serif;
+
 }
-/* clearfix */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+
+
+header , main , footer{
+  width: 100%
+
 }
-/* /clearfix
-/* navigatore */
+/* header area */
 .header-top {
   overflow: hidden;
   background-color: #333;
@@ -18,15 +18,17 @@
   top: 0;
   width: 100%;
   z-index: 4;
+
 }
 
 .nav-top {
   height: 50px;
-  border-bottom: 2px solid #808080;
+  border-bottom: 2px solid gray;
   background-color: #ecf0ee;
   list-style: none;
+
 }
-.nav-side {
+.nav-left , .nav-right {
   width: 48%;
   height: 100%;
   text-align: center;
@@ -40,8 +42,17 @@
   background-color: #ecf0ee;
 }
 
+ .li-setting{
+  display: inline-block;
+  height: 100%;
+  padding: 0px 10px;
+}
+.li-setting:hover {
+  cursor: pointer;
+}
+
 #login {
-  background-color: #FFF;
+  background-color: white;
   color: #fb7956;
   border: 1px solid #fb7956;
   border-radius: 5px;
@@ -51,24 +62,24 @@
 }
 #login:hover{
   background-color: #fb7956;
-  color: #FFF;
+  color: white;
 }
 
 #button-orange {
   background-color: #fb7956;
-  color: #FFF;
+  color: white;
   border-radius: 5px;
+  border-color: none;
   font-size: 20px;
   text-decoration: none;
-  padding: 3px;
+  padding:3px;
 }
 #button-orange:hover {
-  background-color: #FFF;
+  background-color: white;
   color: #fb7956;
 }
-/* /navigatore */
- /* menu e logo */
-.logo-site , .menu {
+
+.logo-site {
   width: 29%;
   height: 100%;
   float: left;
@@ -78,23 +89,16 @@
 
 .menu {
   width: 65%;
-}
-/*/menu e logo */
-/* impostazione per lista */
- .li-setting{
-  display: inline-block;
   height: 100%;
-  padding: 0 10px;
+  float: left;
+  text-align: right;
+  padding: 10px;
 }
-.li-setting:hover {
-  cursor: pointer;
-}
-/* /impostazione per lista */
-/* immgine link e dowload */
+
 .header-bottom {
   margin-top: 100px;
   height: 576px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid black;
   background-image: url(../img/jumbotron.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,8 +107,8 @@
 }
 
 .presentation {
-  text-align: justify;
   width: 50%;
+  text-align: justify;
   font-size: 27px;
   top: 10%;
   left: 15%;
@@ -114,12 +118,17 @@
   padding: 5px;
   line-height: 35px;
 }
-/* /immgine link e dowload */
-/* presentazione servizi */
+/* /header area */
+
+
+/* main area */
+
 .main-top {
-  border: 2px solid #808080;
+  width: 100%;
+  border: 2px solid gray;
   background-color: #F4F9FD;
 }
+
 
 .title-product {
   width: 80%;
@@ -132,15 +141,14 @@
 #integrations-img {
   width: 300px;
 }
-/* /presentazione servizi */
-/* colonna orizzontale prodotti */
+
 .row-product {
   width: 80%;
   height: 300px;
   margin-left: 10%;
-  background-color: #FFF;
+  background-color: white;
   border-radius: 5px;
-  border: .5px solid #808080;
+  border: 0.5px solid gray;
 }
 
 .crm-left {
@@ -172,24 +180,24 @@
   margin: 10px;
   color:#fb7956;
 }
-/* /colonna orizzontale prodotti */
-/* tre colonne verticali prodotti*/
+
+
 .columns-product {
   width: 80%;
   margin: 0 10%;
 }
 
 .product {
-  text-align: center;
   width: 30%;
   height: 600px;
-  border: .5px solid #808080;
+  border: 0.5px solid gray;
   float: left;
-  background-color: #FFF;
+  background-color: white;
   border-radius: 5px;
   margin: 10px 0;
   padding: 30px;
   font-size: 15px;
+  text-align: center;
 }
 
 .center {
@@ -203,28 +211,46 @@
 .product p {
   text-align: left;
 }
-/* /tre colonne verticali prodotti*/
-/* statistiche e risultati ottenuti  */
+
 .main-center {
   width: 100%;
-  background: #020024;
+  background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,176,176,1) 0%, rgba(0,212,255,1) 94%);
+}
+
+.main-top::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-center::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.reference-top::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .title-statistic {
   width: 100%;
+
 }
 
 .title-statistic h2 {
   text-align: center;
-  color: #FFF;
+  color: white;
   padding: 40px;
   font-size: 30px;
   margin: 0 10px;
 }
 .title-statistic p {
   text-align: center;
-  color: #FFF;
+  color: white;
   font-size: 15px;
   margin: 5px 100px;
 
@@ -242,28 +268,39 @@
   float: left;
   padding: 30px;
   text-align: center;
-  color: #FFF;
+  color: white;
 }
 
 .border.top {
-  border-bottom: 1px solid #FFF;
-  border-right: 1px solid #FFF;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 .border.bottom {
-  border-right: 1px solid #FFF;
+  border-right: 1px solid white;
 }
 .border.right {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid white;
 }
 
 .data-statistic h2 , .customer-home h2 , .customer-paragraph h2 {
   font-size: 32px;
 }
-/* /statistiche e risultati ottenuti  */
-/* customer e partners */
-footer {
-  background-color: #324A5B;
-  text-decoration: none;
+
+
+
+.main-bottom {
+  width: 100%;
+}
+
+.main-bottom::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.reference-top {
+  width: 100%
 }
 
 .customer-home {
@@ -281,6 +318,7 @@ footer {
   height: 100%;
   padding-left: 90px;
   float:left;
+
 }
 
 #customerlogo {
@@ -291,7 +329,9 @@ footer {
 }
 
 .reference-bottom {
+  width: 100%;
   margin-top: 50px;
+
 }
 
 .customer-paragraph {
@@ -311,10 +351,21 @@ footer {
   margin-left: 50px;
   margin-bottom: 100px;
 }
-/* / customer e partners */
-/* link e social */
+
+footer {
+  background-color: #324A5B;
+  text-decoration: none;
+}
+
+
+.top-footer {
+  width: 100%;
+
+}
+
 .link-list {
   width: 25%;
+  height: 100%;
   line-height: 50px;
   text-align: center;
   float: left;
@@ -324,7 +375,8 @@ footer {
 }
 
 .link-list li {
-  color: #FFF;
+  height: 100%;
+  color: white;
   padding: 0 10px;
 }
 
@@ -335,14 +387,15 @@ footer {
 
 .link-list a {
   text-decoration: none;
-  color: #FFF;
+  color: white;
   opacity: 0.6;
 }
 
 #button-contact {
-  background-color: #FFF;
+  background-color: white;
   color: #324A5B;
   border-radius: 5px;
+  border-color: none;
   font-size: 17px;
   text-decoration: none;
   padding:3px;
@@ -350,66 +403,57 @@ footer {
 #button-contact:hover {
   background-color: #fb7956;
 }
-/* /link e social */
-/* selezione lingue e Copyright */
+
+.bottom-footer {
+  width: 100%;
+  height: 100%;
+}
+
 .languages {
   width: 90%;
   margin: 0 5%;
   text-align: center;
-  color: #FFF;
+  color: white;
 }
 
-.copy , .languages.li-setting {
-  padding: 10px;
+.languages.li-setting {
+  padding: 10px 10px;
+}
+
+.languages::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .copy {
   width: 80%;
   margin: 0 10%;
+  padding: 10px;
 }
 
-
-.copy-left , .copy-right {
+.copy-left {
   width: 50%;
-  margin: 0 auto;
+  margin-right: 0;
   padding: 10px;
   text-align: left;
   float: left;
 }
-
-.copy-right {
-  text-align: right;
-}
 .copy-left img {
-  margin-left: 0;
-  background: #FFF;
+  margin-left: 0px;
+  background: white;
   border-radius: 5px;
   padding: 2px;
 }
 
-.copy-right label {
-  margin: 10px;
+.copy-right {
+  width: 50%;
+  margin-right: 0;
+  padding: 10px;
+  text-align: right;
+  float: left;
 }
-/* /selezione lingue e Copyright */
-/* widget chat */
- .widget {
-   overflow-x: hidden;
-   position: fixed;
-   bottom: -60px;
-   right: 10px;
-   width: 200px;
-   height: 200px;
- }
- .message-widget {
-   padding: 5px;
-   background-color: #FFF;
-   border-radius: 4px;
-   border: .5px solid #808080;
- }
 
- .chat-icon{
-   font-size: 50px;
-   color: #808080;
-   text-align: right;
- }
- /*/ widget chat */
+.copy-right label {
+  margin: 10px 10px;
+}
